@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        body {
+          font-family: 'Roboto', sans-serif;
+          background: #e0115f;
+          background: linear-gradient(0deg, #e0115f 0%, #f12270 32%, #f22371 50%, #f32472 74%, #f32573 100%);
+          color: #e0e0e0;
+          display: grid;
+          place-items: center;
+          height: 100vh;
+          text-align: center;
+        }
+    </style>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
